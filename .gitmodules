@@ -1,0 +1,45 @@
+[submodule "development_packages/hazel"]
+	path = development_packages/hazel
+	url = git@github.com:xyla-io/hazel.git
+[submodule "development_packages/heathcliff"]
+	path = development_packages/heathcliff
+	url = git@github.com:xyla-io/heathcliff.git
+[submodule "development_packages/salem"]
+	path = development_packages/salem
+	url = git@github.com:xyla-io/salem.git
+[submodule "development_packages/garfield"]
+	path = development_packages/garfield
+	url = git@github.com:xyla-io/garfield.git
+[submodule "development_packages/figaro"]
+	path = development_packages/figaro
+	url = git@github.com:xyla-io/figaro.git
+[submodule "development_packages/jones"]
+	path = development_packages/jones
+	url = git@github.com:xyla-io/jones.git
+[submodule "development_packages/data_layer"]
+	path = development_packages/data_layer
+	url = git@github.com:xyla-io/data_layer.git
+[submodule "development_packages/azrael"]
+	path = development_packages/azrael
+	url = git@github.com:xyla-io/azrael.git
+[submodule "development_packages/fabrica"]
+	path = development_packages/fabrica
+	url = git@github.com:xyla-io/fabrica.git
+[submodule "development_packages/moda"]
+	path = development_packages/moda
+	url = git@github.com:xyla-io/moda.git
+[submodule "development_packages/subir"]
+	path = development_packages/subir
+	url = git@github.com:xyla-io/subir.git
+[submodule "development_packages/lilu"]
+	path = development_packages/lilu
+	url = git@github.com:xyla-io/lilu.git
+[submodule "development_packages/io_almacen"]
+	path = development_packages/io_almacen
+	url = git@github.com:xyla-io/io_almacen.git
+[submodule "development_packages/io_map"]
+	path = development_packages/io_map
+	url = git@github.com:xyla-io/io_map.git
+[submodule "development_packages/io_channel"]
+	path = development_packages/io_channel
+	url = git@github.com:xyla-io/io_channel.git

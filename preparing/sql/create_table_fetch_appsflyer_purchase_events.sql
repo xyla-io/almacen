@@ -1,0 +1,48 @@
+--
+-- table
+--
+create table {SCHEMA}fetch_appsflyer_purchase_events (
+    "appsflyer id" character varying(765),
+    "attributed touch type" character varying(765),
+    "attributed touch time" timestamp without time zone,
+    "is retargeting" bool,
+    "is primary attribution" bool,
+    "install time" timestamp without time zone,
+    "event time" timestamp without time zone NOT NULL,
+    "event name" character varying(765) NOT NULL,
+    "event value" character varying(32768),
+    "event revenue" character varying(765),
+    "event revenue currency" character varying(765),
+    "event revenue usd" double precision,
+    "media source" character varying(765),
+    channel character varying(765),
+    keywords character varying(32768),
+    campaign character varying(6138),
+    "campaign id" character varying(765),
+    adset character varying(765),
+    "adset id" character varying(765),
+    ad character varying(3066),
+    "ad id" character varying(765),
+    "ad type" character varying(765),
+    "country code" character varying(45),
+    state character varying(765),
+    city character varying(765),
+    "postal code" character varying(93),
+    dma character varying(765),
+    ip character varying(765),
+    idfa character varying(765),
+    "advertising id" character varying(765),
+    "android id" character varying(765),
+    idfv character varying(765),
+    platform character varying(765),
+    "device type" character varying(765),
+    "os version" character varying(765),
+    "app version" character varying(765),
+    "app name" character varying(765),
+    company_display_name character varying(765),
+    app_id character varying(765),
+    crystallized bool NOT NULL default true,
+    fetch_date datetime
+)
+distkey ("event time")
+sortkey ("event time", channel, platform, "ad id");

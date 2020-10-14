@@ -1,0 +1,75 @@
+{
+  "demo": {
+    "company_metadata": {
+      "currency": "USD",
+      "display_name": "Xyla"
+    },
+    "products": {
+      "goalie": {
+        "display_name": "Goalie",
+        "platform_ids": {
+          "ios": 1000
+        }
+      }
+    },
+    "task_sets": {
+      "mutate_performance_cube_1_filtered_all": {
+        "action": "mutate",
+        "infer_channel": false,
+        "target": "performance_cube_filtered",
+        "product_identifiers": [],
+        "credentials_key": null,
+        "task_types": [
+          "mutate_performance_cube_tags",
+          "materialize_entity_campaign",
+          "materialize_entity_adset",
+          "materialize_entity_ad"
+        ],
+        "verifications": {
+          "channel_count": {
+            "required": false,
+            "before": true,
+            "task_pattern": "^mutate_performance_cube_tags$",
+            "verify": {
+              "name_a": "x",
+              "text_a": "SELECT 0 as x",
+              "name_b": "y",
+              "text_b": "SELECT 1 as x"
+            }
+          },
+          "channel_sum": {
+            "identifier": "channel_sum",
+            "required": true,
+            "before": true,
+            "task_pattern": "^mutate_performance_cube_tags$",
+            "verify": {
+              "name_a": "x",
+              "text_a": "SELECT 1 as x",
+              "name_b": "y",
+              "text_b": "SELECT 1 as x"
+            }
+          }
+        }
+      },
+      "verify_performance_cube_0_unfiltered_all": {
+        "action": "verify",
+        "target": "performance_cube_unfiltered",
+        "verifications": {
+          "unfiltered_apple": {
+            "identifier": "unfiltered_apple",
+            "required": true,
+            "verify": {
+              "name_a": "x",
+              "text_a": "SELECT 0 as x",
+              "name_b": "y",
+              "text_b": "SELECT 1 as x"
+            }
+          }
+        },
+        "task_types": [
+          "verify_performance_cube_unfiltered_apple"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+[build]
+  publish = "dist/"
+  command = "mkdir dist && mv sphinx dist/reference"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+  Basic-Auth = "xylapedia:Dih4tFmiMdzhfDsiBPxpdRY"
+
+[[redirects]]
+  from = "/"
+  to = "reference/documentation/"
+
+[[redirects]]
+  from = "/reference"
+  to = "reference/documentation/"

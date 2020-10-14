@@ -1,0 +1,16 @@
+SQLAlchemy
+pandas
+requests
+furl
+tzlocal
+xlrd
+ratelimit
+click
+pytest
+psycopg2-binary
+sqlalchemy-redshift
+datacompy
+sphinx
+groundwork-sphinx-theme
+# pendulum 2.1.1 fails to install without wheel
+pendulum==2.1.0

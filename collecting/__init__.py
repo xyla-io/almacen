@@ -1,0 +1,2 @@
+from collecting.base import ReportCollector
+from collecting.collect_report_factory import report_collector
